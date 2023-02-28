@@ -2,8 +2,6 @@ name: tfsec
 on:
   push:
     branches:
-      - new
-      - fresh
   pull_request:
     branches:
       - new
