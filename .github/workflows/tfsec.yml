@@ -4,6 +4,7 @@ on:
     branches:
       - new
   pull_request:
+      - new
 jobs:
   tfsec:
     name: tfsec
