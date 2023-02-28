@@ -2,14 +2,16 @@ name: tfsec
 on:
   push:
     branches:
-      - new
   pull_request:
+    branches:
+      - new
 jobs:
   tfsec:
     name: tfsec
     runs-on: ubuntu-latest
 
     steps:
+  
       - name: Clone repo
         uses: actions/checkout@master
       - name: tfsec
